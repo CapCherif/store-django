@@ -1,0 +1,23 @@
+invite de commande:
+ - se diriger a un répértoire donnée (ex : desktop)
+ - lancer la commande : django-admin startproject 'nom du proje' (ex: store)
+ - cd 'ex : store'
+ - ouvrir le répértoire avec vs code: code .
+ - créer un répértoire pour les pages; ex : pages
+ - modifier settings.py : DIRS : ['pages']
+ - créer un répértoire dans lequel stocker mes fichiers css/js, ex:public
+ - référence le répértoire public dans settings.py
+ - de préférence: créer un fichier views.py dans l'application principale
+ - views ( va renfermer les fonctions responsable de la gestion des pages )
+ - créer les pages necessaire (index.html......)
+ - créer une application (secondaire) exemple: article
+    * django-admin startapp article
+    * définir le model dans models.py
+    * settings.py -> installed app : article
+    * exécuter ses deux commandes:
+	python manage.py makemigrations (crée la table)
+	python manage.py migrate
+	------ toujours éxécuter ses 2 commandes si il ya changement dans le model-----
+    * créer un super admin (pour visualiser les enregistrements)
+    * dans l'application article / admin => admin.site.register(Article)
+    
