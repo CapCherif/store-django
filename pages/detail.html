@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+
+    <div id="container">
+        <nav>
+            <span id="logo">Store</span>
+            <a href="/">Accueil</a>
+            <a href="/ajout">Ajout</a>        
+        </nav>
+
+        <div style="background-color: white;padding: 10px;">
+            <h2>Detail:</h2>
+            <h3>Title: {{article.title}}</h3>
+            
+            <p>
+                {{article.description}}
+            </p>
+        
+
+            <p><strong>Author :</strong> {{article.author}}</p>
+            <p><strong>Date</strong> {{article.date}}</p>
+
+            
+            <a href="/delete?id={{article.id}}" class="delete">X Supprimer</a>
+            <a href="/update?id={{article.id}}" class="update"> Modifier</a>
+
+
+        </div>
+
+
+    </div>
+
+</body>
+</html>

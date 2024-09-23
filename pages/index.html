@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+
+    <div id="container">
+        <nav>
+            <span id="logo">Store</span>
+            <a href="/">Accueil</a>
+            <a href="/ajout">Ajout</a>        
+        </nav>
+        
+        <div id="articles">
+
+            {% for article in articles %}
+                <div class="article">
+                    <h3><a href="/detail?id={{article.id}}">{{article.title}}</a></h3>
+                    
+                    <small>{{article.date}} - {{article.author}}</small>
+                </div>
+            {% endfor %}
+           
+        </div>
+    </div>
+
+</body>
+</html>

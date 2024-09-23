@@ -1,0 +1,74 @@
+
+body{
+    background-color: rgb(4, 4, 47);
+}
+#container{
+    max-width: 800px;
+    margin: 100px auto;
+}
+
+
+nav > *{
+    margin: 10px;
+    color: rgb(235, 235, 235);
+}
+nav {
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+    margin-bottom: 50px ;
+}
+
+.article{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    margin: 10px 0px;
+}
+.article a{
+    color: greenyellow;
+    text-decoration: none;
+}
+
+.article p{
+    color: rgb(74, 74, 74);
+}
+.article small {
+    font-style: italic;
+    color: gray;
+
+}
+
+#logo{
+    color: greenyellow;
+    font-style: italic;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+form{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+input, textarea{
+    display: block;
+    width: 400px;
+    padding: 8px;
+    margin: 10px 0px;
+    border:1px solid lightgray ;
+    border-radius: 5px;
+}
+.added{
+    margin: 10px ;
+    color: green;
+}
+
+
+.delete{
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+}
